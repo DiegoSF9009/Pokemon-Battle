@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 public class InstantiatePoolObjects : MonoBehaviour
 {
     [SerializeField]
@@ -31,6 +32,12 @@ public class InstantiatePoolObjects : MonoBehaviour
             currentObject.SetActive(true);
         }
     }
+
+    public void SetPrefab(GameObject newPrefab)
+    {
+        prefab = newPrefab;
+    }
+
     private GameObject GetPoolObject()
     {
         foreach (var obj in objectPool)

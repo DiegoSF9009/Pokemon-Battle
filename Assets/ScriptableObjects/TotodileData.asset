@@ -15,9 +15,15 @@ MonoBehaviour:
   characterName: Totodile
   maxHealth: 200
   attacks:
-  - attackName: 
-    minDamage: 0
-    maxDamage: 0
-    animationName: 
-    attackParticles: {fileID: 0}
+  - attackName: WaterWaves
+    minDamage: 50
+    maxDamage: 100
+    animationName: Attack
+    attackParticles: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
+    attackHitParticles: {fileID: 0}
+  - attackName: BubbleBreath
+    minDamage: 50
+    maxDamage: 100
+    animationName: Attack
+    attackParticles: {fileID: 8620588918006998808, guid: 7f906c77905876d488e88e99d13c3d7d, type: 3}
     attackHitParticles: {fileID: 0}
