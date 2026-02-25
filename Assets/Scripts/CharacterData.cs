@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 [CreateAssetMenu(fileName = "CharacterData", menuName = "Scriptable Objects/CharacterData")]
 public class CharacterData : ScriptableObject
 {
@@ -25,8 +26,9 @@ public class CharacterData : ScriptableObject
 
     public float maxDamage;
 
-
     public string animationName;
+
+    public float attackDuration;
 
     public GameObject attackParticles;
 

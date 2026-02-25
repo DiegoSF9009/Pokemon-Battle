@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using System.Collections;
 
 
 public class Fighter : MonoBehaviour
@@ -13,6 +14,15 @@ public class Fighter : MonoBehaviour
 
     private UnityEvent onInitialize;
 
+    private Animator animator;
+
+
+    public Animator Animator => animator;
+
+    private Health health;
+
+    public Health Health => health;
+
     private List<Attack> attacks;
 
     public Attack[] Attacks => attacks.ToArray();
@@ -22,7 +32,9 @@ public class Fighter : MonoBehaviour
         attacks = new List<Attack>();   
         foreach (AttackData attackData in characterData.attacks)
         {
-
+            
+            health = GetComponent<Health>();
+            animator = GetComponent<Animator>();
             Attack attack = new Attack();
             attack.attackData = attackData;
 
