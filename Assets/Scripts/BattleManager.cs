@@ -17,7 +17,13 @@ private List<Fighter> fighters = new List<Fighter>();
 
 private UnityEvent onStartBattleCount;
 [SerializeField]
+
+private UnityEvent onStartBattle;
+[SerializeField]
 private  UnityEvent onStopBattle;
+[SerializeField]
+
+private UnityEvent<string> onWinBattle;
 
 private Coroutine battleCoroutine;
 
@@ -56,7 +62,7 @@ public void AddFighter(Fighter fighter)
 
 public void StartBattle()
     { 
-        
+        onStartBattle?.Invoke();
         battleCoroutine = StartCoroutine(BattleCoroutine());
     }
 
@@ -87,11 +93,30 @@ public void StartBattle()
                 
                 RemoveFighter(defender);
 
+            }else
+            {
+                
+                yield return new WaitForSeconds(1.5f);
+
             }
 
 
         }
+        if (fighters.Count == 1)
+        {
+            
+            onWinBattle?.Invoke(fighters[0].name);
 
+        }
+
+    }
+
+
+    public void WinBattle(Fighter winner)
+    {
+        onWinBattle?.Invoke(winner.CharacterData.characterName);
+        winner.Animator.Play(winner.CharacterData.winAnimationName);
+        winner.transform.LookAt(Camera.main.transform);
     }
 
     public void StopBattle()

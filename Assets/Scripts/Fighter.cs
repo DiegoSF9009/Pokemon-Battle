@@ -6,27 +6,17 @@ using System.Collections;
 
 public class Fighter : MonoBehaviour
 {
-
     [SerializeField]
-
     private CharacterData characterData;
+    public  CharacterData CharacterData => characterData;
     [SerializeField]
-
     private UnityEvent onInitialize;
-
     private Animator animator;
-
-
     public Animator Animator => animator;
-
     private Health health;
-
     public Health Health => health;
-
     private List<Attack> attacks;
-
     public Attack[] Attacks => attacks.ToArray();
-
     private void Awake()
     {
         attacks = new List<Attack>();   
