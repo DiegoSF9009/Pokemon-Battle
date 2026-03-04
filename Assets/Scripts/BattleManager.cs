@@ -32,6 +32,7 @@ public void AddFighter(Fighter fighter)
         
         if (fighters.Count < maximumFighters)
         {
+            DialogSystem.Instance.ShowDialog(fighter.CharacterData.characterName + "has entered the battle!");
             fighters.Add(fighter);
             fighter.Initialize();
             if (fighters.Count >= minimumFighters)
@@ -79,9 +80,10 @@ public void StartBattle()
                 defender = fighters[Random.Range(0, fighters.Count)];
             }
             
-            attacker.transform.LookAt(defender.transform);
-            defender.transform.LookAt(attacker.transform);
             Attack attack = attacker.GetRandomAttack();
+            DialogSystem.Instance.ShowDialog(attacker.CharacterData.characterName + "attacks with" + attack.attackData.attackName + "!");
+            attacker.transform.LookAt(defender.transform);
+            defender.transform.LookAt(attacker.transform);            
             attacker.Animator.Play(attack.attackData.animationName);
             attack.particlesPool.InstantiateObject(attacker.transform.position);
             float damage = Random.Range(attack.attackData.minDamage, attack.attackData.maxDamage);
