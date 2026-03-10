@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be69c57c6ab6e5c4689bc9ed245eb57a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageText
-  _textAnimator: {fileID: 0}
+  _textAnimator: {fileID: 6433088824046084548}
   _animationName: Show
   _text: {fileID: 8700110423313208727}
 --- !u!95 &6433088824046084548

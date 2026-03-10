@@ -14,11 +14,11 @@ public class Health : MonoBehaviour
     private UnityEvent<DamageTarget> _onTakeDamage;
     [SerializeField]
     private UnityEvent _onDie;
-
     private DamageTarget damageTarget = new DamageTarget();
     public void TakeDamage(float damage)
     {
         _currentHealth -= damage;
+        DamageTarget damageTarget = new DamageTarget();
         damageTarget.SetDamageTarget(transform, damage);
         _onTakeDamage.Invoke(damageTarget);
         if (_currentHealth <= 0)

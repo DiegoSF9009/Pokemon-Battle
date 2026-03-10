@@ -29,4 +29,4 @@ MonoBehaviour:
     attackDuration: 2
     attackParticles: {fileID: 8620588918006998808, guid: 7f906c77905876d488e88e99d13c3d7d, type: 3}
     attackHitParticles: {fileID: 6823200998282874702, guid: 8f8fe12323625f5499b2853dd2ad3e58, type: 3}
-  winAnimationName: 
+  winAnimationName: Win
