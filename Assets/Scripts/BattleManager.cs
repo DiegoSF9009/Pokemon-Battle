@@ -7,26 +7,19 @@ public class BattleManager : MonoBehaviour
 {
    
 [SerializeField]
-
-private int minimumFighters = 3;
+private int minimumFighters = 2;
 [SerializeField]
-
 private int maximumFighters = 4;
-private List<Fighter> fighters = new List<Fighter>();
 [SerializeField]
-
 private UnityEvent onStartBattleCount;
 [SerializeField]
-
 private UnityEvent onStartBattle;
 [SerializeField]
 private  UnityEvent onStopBattle;
 [SerializeField]
-
 private UnityEvent<string> onWinBattle;
-
 private Coroutine battleCoroutine;
-
+private List<Fighter> fighters = new List<Fighter>();
 public void AddFighter(Fighter fighter)
     {
         
