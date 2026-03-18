@@ -28,5 +28,5 @@ MonoBehaviour:
     animationName: Attack
     attackDuration: 2
     attackParticles: {fileID: 5642766282230003982, guid: b5c8ca7ed10b61e499cce8ec3b6e2e4c, type: 3}
-    attackHitParticles: {fileID: 2504214343621411470, guid: 3ed0d324122d7b24eaec75c55c74aafc, type: 3}
+    attackHitParticles: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
   winAnimationName: Win

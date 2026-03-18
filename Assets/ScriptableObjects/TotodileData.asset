@@ -21,12 +21,12 @@ MonoBehaviour:
     animationName: Attack
     attackDuration: 2
     attackParticles: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
-    attackHitParticles: {fileID: 6823200998282874702, guid: 8f8fe12323625f5499b2853dd2ad3e58, type: 3}
+    attackHitParticles: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
   - attackName: BubbleBreath
     minDamage: 30
     maxDamage: 90
     animationName: Attack
-    attackDuration: 2
+    attackDuration: 1
     attackParticles: {fileID: 8620588918006998808, guid: 7f906c77905876d488e88e99d13c3d7d, type: 3}
-    attackHitParticles: {fileID: 6823200998282874702, guid: 8f8fe12323625f5499b2853dd2ad3e58, type: 3}
+    attackHitParticles: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
   winAnimationName: Win

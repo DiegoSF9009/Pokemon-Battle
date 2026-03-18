@@ -21,12 +21,12 @@ MonoBehaviour:
     animationName: Attack
     attackDuration: 2
     attackParticles: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9, type: 3}
-    attackHitParticles: {fileID: 8172849020266659018, guid: 2af5562ce69fc2d448481a1587a352a5, type: 3}
+    attackHitParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
   - attackName: Fire Breath
     minDamage: 30
     maxDamage: 90
     animationName: Attack
     attackDuration: 2
     attackParticles: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}
-    attackHitParticles: {fileID: 8172849020266659018, guid: 2af5562ce69fc2d448481a1587a352a5, type: 3}
-  winAnimationName: 
+    attackHitParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  winAnimationName: Win

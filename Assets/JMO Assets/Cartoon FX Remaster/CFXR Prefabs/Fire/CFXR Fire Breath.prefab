@@ -44,7 +44,7 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 1, g: 0.32040966, b: 0, a: 1}
-  m_Intensity: 0
+  m_Intensity: 13.529161
   m_Range: 7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 8891297334280618237}
   - component: {fileID: 8892177129927377689}
   - component: {fileID: 762352654476923557}
-  - component: {fileID: 3217276615133156140}
+  - component: {fileID: 3706531618571184765}
   m_Layer: 0
   m_Name: CFXR Fire Breath
   m_TagString: Untagged
@@ -4954,7 +4954,7 @@ MonoBehaviour:
     perlinColor: 0
     perlinColorSpeed: 0
   fadeOutReference: {fileID: 8891297334280618237}
---- !u!114 &3217276615133156140
+--- !u!114 &3706531618571184765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4966,7 +4966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47a9a7abbb404b4e8667651b228042d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyInSeconds
-  secondsToDestroy: 2
+  secondsToDestroy: 1
 --- !u!1 &8764373218812076563
 GameObject:
   m_ObjectHideFlags: 0
